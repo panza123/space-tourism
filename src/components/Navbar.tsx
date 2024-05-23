@@ -20,7 +20,7 @@ export default function Navbar() {
       </div>
       {/* Navbar */}
       <div className="hidden lg:flex items-center">
-        <div className="w-[500px] h-[0.5px] bg-gray-600"></div>
+        <div className="w-[500px] h-[1px] bg-gray-600"></div>
         <nav className="w-[70%] h-[100px] backdrop-blur-[10px] bg-white-alpha-16 flex items-center px-5 gap-3 uppercase"
         
         >
