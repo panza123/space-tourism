@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-size: cover;
+  background-position: bottom center;
+  overflow: hidden;
+}
+
+h1,h2,span{
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn:hover{
+  border-radius: 50%;
+  transition:   box-shadow 687ms ease-out;
+  box-shadow: #7070736e 0px 0px 2px 76px;
+}
+/* In your CSS file */
+.body {
+  @apply max-w-[1440px] mt-10 lg:mt-[200px] px-[50px] grid w-full lg:flex items-center justify-between max-sm:text-center;
+}
