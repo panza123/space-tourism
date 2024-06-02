@@ -5,8 +5,8 @@ export default function Destination() {
   const [selectedDestination, setSelectedDestination] = useState(dis[0]);
 
   return (
-    <main className="w-full min-h-screen bg-star bg-cover bg-no-repeat pt-24 lg:pt-32 px-4 lg:px-10">
-      <h2 className="uppercase text-white max-sm:text-center text-lg lg:text-4xl md:pt-10">
+    <main className="w-full min-h-screen bg-star  bg-cover bg-no-repeat pt-24 lg:pt-32 px-4 lg:px-10 ">
+      <h2 className="uppercase text-white pt-24 max-sm:text-center text-lg lg:text-4xl  ">
         <span className="text-gray-400">01</span> Pick your destination Moon
       </h2>
 
@@ -17,7 +17,7 @@ export default function Destination() {
             <img
               src={selectedDestination.img}
               alt={selectedDestination.title}
-              className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-lg object-cover"
+              className="w-full max-w-md mx-auto lg:mx-0 lg:max-w-lg object-cover rotate"
             />
             {/* Text */}
             <div className="flex flex-col text-white mt-5 lg:mt-0 lg:ml-10">

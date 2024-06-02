@@ -6,7 +6,7 @@ export default function Technology() {
 
   return (
     <main className="w-full min-h-screen bg-tech bg-cover bg-no-repeat pt-24 lg:pt-32 px-4 lg:px-10">
-      <h2 className="uppercase text-white text-center text-lg sm:text-3xl md:pt-10 lg:text-4xl">
+      <h2 className="uppercase text-white pt-24 text-center text-lg sm:text-3xl md:pt-10 lg:text-4xl">
         <span className="text-gray-400">03</span> Space launch
       </h2>
 
@@ -14,7 +14,7 @@ export default function Technology() {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
           <div className="text-center lg:text-left py-3 text-white flex flex-col items-center lg:items-start lg:w-1/2">
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 w-full">
-              <div className="flex lg:flex-col gap-5">
+              <div className="flex lg:flex-col gap-5 max-sm:mt-4">
                 {/* Buttons to toggle */}
                 {tech.map((item) => (
                   <button
@@ -41,11 +41,13 @@ export default function Technology() {
               </div>
             </div>
           </div>
+          {/* {image for small screen} */}
           <img
             src={space.img}
             alt={space.name}
-            className="w-full sm:w-3/4 lg:w-[500px] h-auto object-cover mt-10 lg:mt-0 lg:hidden"
+            className="w-full   h-auto object-cover mt-10 lg:mt-0 lg:hidden"
           />
+          {/* {image for bigscreen} */}
           <img
             src={space.img1}
             alt={space.name}

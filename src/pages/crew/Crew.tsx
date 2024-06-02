@@ -6,14 +6,14 @@ export default function Crew() {
 
   return (
     <main className="w-full min-h-screen bg-crew bg-cover pt-24 lg:pt-32 px-4 lg:px-10">
-      <h2 className="uppercase text-white max-sm:text-center max-md:text-center text-lg sm:text-3xl md:pt-10 lg:text-4xl">
+      <h2 className="uppercase text-white pt-24  max-sm:text-center max-md:text-center text-lg sm:text-3xl md:pt-10 lg:text-4xl">
         <span className="text-gray-400">02</span> Meet your crew Commander
       </h2>
       <section className="max-w-[1440px] mx-auto mt-10 sm:mt-20">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
           <div className="text-center lg:text-left py-3 text-white flex flex-col items-center lg:items-start">
 
-          <div className="flex lg:hidden mt-0 gap-3 justify-center">
+          <div className="flex lg:hidden mt-3 gap-3 justify-center">
           {data.map((item) => (
             <div
               className={`w-6 h-6 rounded-full cursor-pointer ${crew.id === item.id ? 'bg-white' : 'bg-gray-500'}`}
@@ -24,7 +24,7 @@ export default function Crew() {
         </div>
 
 
-            <p className="text-xl sm:text-3xl lg:text-4xl uppercase">
+            <p className="text-xl sm:text-3xl lg:text-4xl uppercase pt-5">
               <span className="text-gray-400 ">{crew.role}</span>
             </p>
             <p className="pt-5 text-2xl sm:text-3xl lg:text-6xl uppercase">
